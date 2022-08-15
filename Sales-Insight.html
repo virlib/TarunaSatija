@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Hyperspace by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload" >
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Hyperspace</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="generic.html" class="active">Generic</a></li>
+						<li><a href="elements.html">Elements</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Sales-Insight - Tableau</h1>
+							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+							<p>I analysed the dataset of an HR department in a certain company. 
+								This is fictional data that was provided by <a href="https://github.com/codebasics/DataAnalysisProjects/blob/master/2_SalesInsightsTableau/db_dump.sq">Code Basics Github</a> 
+								The main objective of the analysis is to find out why sales are decreasing and how to solve it by gathering insights regarding:</p>
+								<p>
+								<ol>
+									<li>Which regions produce maximum sale </li>
+									<li>Identifying regions which give highest revenue and/or net profit</li>
+									<li>Products doing good in terms of profit</li>
+									<li>Company’s top customers</li>
+								</ol>
+
+									<br>
+
+									Tools used in this analysis are : Tableau, MySQL
+								</p>
+
+							<h2>Data Structure and Data Cleaning </h2>
+							<p>There are 5 tables in the database each containing details of customers, markets, products, transactions of the company. </p>
+							<p>Data Cleaning: There were no null values as such and data was mostly clean except that calculations in profit_margin_perecntage, 
+								profit_margin, profit_cost were in USD and INR. I created a new column in tableau and changed all the other values in USD into INR.
+								 This way the real database won’t be altered in case of miscalculation. </p>
+
+							<p>In the end, we join all tables to transaction via the date, product code, customer code and market code.</p>
+
+							<h2>Analysis and Insights</h2>
+							<p>I have mainly used tableau for the whole analysis.  
+
+								<br><br>
+								The Total Sales from Oct 2017 to June 2020 is 2.43 Million Units with Total Revenue around 984.87 Million INR i.e. 98.5 crores rupees. 
+
+								<br><br>
+								The Total Profit company enjoyed from 2017 to 2020 is 257.97 crores rupees. 
+
+								<br><br>
+								Among the best doing markets in terms of Revenue are : Delhi NCR, Mumbai, Ahmedabad, Bhopal, Nagpur and Kochi.
+
+								<br><br>
+								Expectedly, these cities are among the top markets in terms of Sale Quantities but in different order. 
+								</p>
+							<p>Every city except Bengaluru generates profit. Bengaluru stands in the last position in both Sales and Revenue. 
+
+								<br><br>
+								Top 5 Products include Prod040, Prod159, Prod065, Prod018 and Prod053. Prod040 seems to do really well compared to all the other products. The difference between it and the second best product is huge compared to other differences.
+
+								<br><br>
+								Same is the case with Electrical Stores. It exceeds other customers by an excellent margin.
+
+								<br><br>
+								We see a trend of decreasing sales and reveue especially since 2019 started.
+
+								<br><br>
+								Brick and Mortar i.e. tradional stores bring more revenue than E-commerce platforms.
+								</p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
